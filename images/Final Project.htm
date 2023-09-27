@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://127.0.0.1:5501/? -->
+<html lang="en" class="gr__127_0_0_1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script src="./Final Project_files/jquery.min.js"></script>
+
+  
+
+  <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+
+ <script src="./Final Project_files/be104bcbce.js"></script>
+
+
+
+  
+
+  
+  <title>Final Project</title>
+<link rel="stylesheet" href="./Final Project_files/materialize.min.css"><link rel="stylesheet" href="./Final Project_files/free.min.css" media="all"><link rel="stylesheet" href="./Final Project_files/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="./Final Project_files/free-v4-shims.min.css" media="all"><link rel="stylesheet" href="./Final Project_files/skeleton.css" integrity="sha256-ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg=" crossorigin="anonymous"><link href="./Final Project_files/css" rel="stylesheet"><link rel="stylesheet" href="./Final Project_files/project.css"></head>
+
+<body data-gr-c-s-loaded="true">
+  <div id="container">
+    <header>
+      <h1 class="logo">
+        Roy's Amazing Book Emporium
+      </h1>
+    </header>
+
+    <div id="content">
+      
+      <form id="search-bar">
+        <input id="search" type="text" placeholder="Type Author, Book name, Manga&#39;s">
+        <button id="search-btn">Search</button>
+      </form>
+    </div>
+
+    <div id="books"> </div>
+    <div id="no-results"><div class="no-results-content" style="
+    text-align: center;
+    display: block;
+">no results</div></div>
+
+
+    <footer>
+      <div>© Copyright 2019 Created by Roy Frias</div></footer>
+
+
+  </div>
+
+  <script type="text/javascript" src="./Final Project_files/project.js"></script>
+  <script src="./Final Project_files/materialize.min.js"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+
+
+
+<!-- <div class="book2 book">
+        <img src="http://dnajs.org/graphics/sample-book-cover.jpg" alt="cover-page" class="image">
+        <div class="side-info">
+          <p>Title : Space The Final Frontier</p>
+          <p>Publisher : Ownage Books</p>
+          <p>Price : $9.96</p>
+        </div>
+      </div>
+
+
+      <div class="book1 book">
+        <img src="http://dnajs.org/graphics/sample-book-cover.jpg" alt="cover-page" class="image">
+        <div class="side-info">
+          <p>Title : Space The Final Frontier</p>
+          <p>Publisher : Ownage Books</p>
+          <p>Price : $9.97</p>
+        </div>
+      </div>
+
+      <div class="book2 book">
+        <img src="http://dnajs.org/graphics/sample-book-cover.jpg" alt="cover-page" class="image">
+        <div class="side-info">
+          <p>Title : Space The Final Frontier</p>
+          <p>Publisher : Ownage Books</p>
+          <p>Price : $9.98</p>
+        </div>
+      </div>
+      
+      <div class="book1 book">
+        <img src="http://dnajs.org/graphics/sample-book-cover.jpg" alt="cover-page" class="image">
+        <div class="side-info">
+          <p>Title : Space The Final Frontier</p>
+          <p>Publisher : Ownage Books</p>
+          <p>Price : $9.99</p>
+        </div>
+      </div>
+
+      <div class="book2 book">
+        <img src="http://dnajs.org/graphics/sample-book-cover.jpg" alt="cover-page" class="image">
+        <div class="side-info">
+          <p>Title : Space The Final Frontier</p>
+          <p>Publisher : Ownage Books</p>
+          <p>Price : $10.00</p>
+        </div>
+      </div>
+
+      <div class="book1 book">
+        <img src="http://dnajs.org/graphics/sample-book-cover.jpg" alt="cover-page" class="image">
+        <div class="side-info">
+          <p>Title : Space The Final Frontier</p>
+          <p>Publisher : Ownage Books</p>
+          <p>Price : $10.01</p>
+        </div>
+      </div>
+
+      <div class="book2 book">
+        <img src="http://dnajs.org/graphics/sample-book-cover.jpg" alt="cover-page" class="image">
+        <div class="side-info">
+          <p>Title : Space The Final Frontier</p>
+          <p>Publisher : Ownage Books</p>
+          <p>Price : $10.02</p>
+        </div>
+      </div>
+
+      <div class="book1 book">
+        <img src="http://dnajs.org/graphics/sample-book-cover.jpg" alt="cover-page" class="image">
+        <div class="side-info">
+          <p>Title : Space The Final Frontier</p>
+          <p>Publisher : Ownage Books</p>
+          <p>Price : $10.03</p>
+        </div>
+      </div>
+
+    
+      <div class="book2 book">
+        <img src="http://dnajs.org/graphics/sample-book-cover.jpg" alt="cover-page" class="image">
+        <div class="side-info">
+          <p>Title : Space The Final Frontier</p>
+          <p>Publisher : Ownage Books</p>
+          <p>Price : $10.04</p>
+        </div>
+      </div> --></body></html>
